@@ -1,0 +1,22 @@
+{% extends 'html/index.html'%}
+
+{% block content %}
+
+
+
+
+	<form action="" method="post">
+	{% csrf_token %}
+
+	FIRST NAME<input type="text" name="first_name" placeholder="First Name"><br>
+	LAST NAME<input type="text" name="last_name" placeholder="Last Name"><br>
+	EMAIL<input type="email" name="email" placeholder="email"><br>
+	USERNAME<input type="username" name="username" placeholder="Username"><br>
+	PASSWORD<input type="password" name="password1" placeholder="Password"><br>
+	CONFIRM PASSWORD<input type="password" name="password2" placeholder="Confirm Password"><br>
+	<input type="submit">
+	</form>
+
+
+
+{% endblock %}
