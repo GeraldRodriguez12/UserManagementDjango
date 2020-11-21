@@ -6,13 +6,22 @@
 {{ error }}
 {% endif %}
 
-<form method="post" action="">{% csrf_token %}
-USERNAME<input type=username placeholder="username" name="username"><br>
-PASSWORD<input type=password placeholder="password" name="password">
-<input type="submit" value="login">
+{% load static %}
 
-<p><a href="{%url 'password_reset'%}">Forgot your fucking password?</a></p>
-</form>
+<form method="post" action="" class="box">{% csrf_token %}
 
 
+
+	<link rel="stylesheet" type="text/css" href="{% static 'css/index.css'%}">
+
+
+	<h1>LOGIN</h1>
+	<input type="username" name="username" placeholder="USERNAME">
+	<input type="password" name="password" placeholder="PASSWORD">
+	<input type="submit" name="" value="LOGIN">
+
+	<p><a href="{%url 'password_reset'%}">Forgot your password?</a></p>
+
+</form>	
 {% endblock %}
+
