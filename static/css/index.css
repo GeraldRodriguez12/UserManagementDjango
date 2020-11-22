@@ -32,24 +32,26 @@
 .box input[type = "username"], .box input[type = "password"]{
 
 	border: 0;
-	background: #e1e5ed;
+	background: #D3D3D3;
 	display: block;
 	margin: 20px auto;
 	text-align: center;
-	border: 2px solid #9b9fa8;
+	border: 2px;
 	padding: 14px 10px;
 	width: 200px;
 	outline: none;
 	color: black;
 	border-radius: 15px;
 	transition: 0.25s;
+	
 
 }
 
 .box input[type = "username"]:focus, .box input[type = "password"]:focus{
 
 	width: 220px;
-	border-color: #2ecc71;
+	border-color: #4682B4;
+
 }
 
 .box input[type = "submit"]{
@@ -59,7 +61,7 @@
 	display: block;
 	margin: 20px auto;
 	text-align: center;
-	border: 2px solid #2ecc71;
+	border: 2px;
 	padding: 14px 40px;
 	width: 150px;
 	outline: none;
@@ -67,12 +69,12 @@
 	border-radius: 15px;
 	transition: 0.25s;
 	cursor: pointer; 
-	background: #ceebd9
+	background: #3997db;
 
 }
 .box input[type = "submit"]:hover{
 
-	background: #2bc260;
+	background: #4682B4;
 
 
 

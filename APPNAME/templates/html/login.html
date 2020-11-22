@@ -2,9 +2,6 @@
 
 {% block content %}
 
-{% if error %}
-{{ error }}
-{% endif %}
 
 {% load static %}
 
@@ -13,6 +10,9 @@
 
 
 	<link rel="stylesheet" type="text/css" href="{% static 'css/index.css'%}">
+	{% if error %}
+	{{ error }}
+	{% endif %}
 
 
 	<h1>LOGIN</h1>

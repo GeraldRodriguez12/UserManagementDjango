@@ -41,10 +41,14 @@ def signup(request):
 		if password1 == password2 :
 			if User.objects.filter(username=username).exists():
 				error="Username is already taken"
-				return render(request, 'html/register.html')
+				return render(request, 'html/register.html',{'error':error})
 			elif User.objects.filter(email=email).exists():
 				error="Email is already taken"
-				return render(request, 'html/register.html')
+				return render(request, 'html/register.html',{'error':error})
+			elif User.objects.filter().exists():
+				error="Please fill the blank "
+				return render(request, 'html/register.html',{'error':error})
+
 			else:
 				user = User.objects.create_user(
 											first_name=first_name,
