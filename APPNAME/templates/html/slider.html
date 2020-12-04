@@ -1,25 +1,69 @@
 {%extends 'html/index.html'%}
 
 {% block content %}
-<div class="container">
-
-	<div class="slide_img" id="one">
-		<img src="">
-	</div>
-
-	<div class="slide_img" id="two">
-		<img src="">
-	</div>
-
-	<div class="slide_img" id="three">
-		<img src="">
-	</div>
-  
 
 
+<link rel="stylesheet" type="text/css" href="{%static 'css/slider.css'%}">
+<div class="slidershow middle">
+
+<div class="slides">
+  <input type="radio" name="r" id="r1" checked>
+  <input type="radio" name="r" id="r2">
+  <input type="radio" name="r" id="r3">
+  <input type="radio" name="r" id="r4">
+  <input type="radio" name="r" id="r5">
+
+
+  <div class="slide s1" id="one">
+    <img src="{% static 'images/fourwhite.jpg'%}">
+
+    <label class="prev" for="r5"><span>&#x2039;</span></label>
+    <label class="next" for="r2"><span>&#x203a;</span></label>
+  </div>
+
+  <div class="slide" id="two">
+    <img src="{% static 'images/yellow.jpg'%}">
+
+    <label class="prev" for="r1"><span>&#x2039;</span></label>
+    <label class="next" for="r3"><span>&#x203a;</span></label>
+  </div>
+
+
+  <div class="slide" id="three">
+    <img src="{% static 'images/red.jpg'%}">
+
+    <label class="prev" for="r2"><span>&#x2039;</span></label>
+    <label class="next" for="r4"><span>&#x203a;</span></label>
+  </div>
+
+  <div class="slide" id="four">
+    <img src="{% static 'images/black2.jpg'%}">
+
+    <label class="prev" for="r3"><span>&#x2039;</span></label>
+    <label class="next" for="r5"><span>&#x203a;</span></label>
+  </div>
+
+
+  <div class="slide" id="five">
+    <img src="{% static 'images/yellow.jpg'%}">
+
+    <label class="prev" for="r4"><span>&#x2039;</span></label>
+    <label class="next" for="r1"><span>&#x203a;</span></label>
+  </div>
+
+
+
+  <div class="navigation">
+    <label for="r1" class="bar" id="dot1"></label>
+    <label for="r2" class="bar" id="dot2"></label>
+    <label for="r3" class="bar" id="dot3"></label>
+    <label for="r4" class="bar" id="dot4"></label>
+    <label for="r5" class="bar" id="dot5"></label>
+
+  </div>
 
 
 </div>
-
+</div>
 
 {% endblock %}
